@@ -1547,6 +1547,12 @@ svg {
   margin-bottom: 32px;
 }
 
+.instrument-grid > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .instrument-grid figure {
   position: relative;
   overflow: hidden;
@@ -1581,6 +1587,111 @@ svg {
 .instrument-grid figure:hover img {
   opacity: 1;
   transform: scale(1.03);
+}
+
+.instrument-grid > a:focus-visible figure {
+  outline: 3px solid #f2af00;
+  outline-offset: 3px;
+}
+
+.instrument-hero {
+  padding-block: 52px;
+  color: var(--white);
+  background: var(--red);
+}
+
+.instrument-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(260px, 420px);
+  align-items: center;
+  gap: 60px;
+}
+
+.instrument-hero h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 7vw, 6.8rem);
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.instrument-hero .eyebrow {
+  margin-top: 26px;
+  color: var(--ink);
+}
+
+.instrument-back {
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-underline-offset: 5px;
+  text-transform: uppercase;
+}
+
+.instrument-hero img {
+  width: 100%;
+  height: 230px;
+  border: 6px solid rgb(255 255 255 / 25%);
+  object-fit: cover;
+}
+
+.instrument-description {
+  max-width: 850px;
+  margin-bottom: 38px;
+  padding: 22px 26px;
+  border-left: 5px solid var(--red);
+  background: var(--paper);
+}
+
+.instrument-description p {
+  margin: 0 0 14px;
+  line-height: 1.7;
+}
+
+.instrument-description p:last-child {
+  margin-bottom: 0;
+}
+
+.instrument-section-heading h2 span {
+  color: var(--red);
+}
+
+.instrument-resources-section {
+  padding-block: 55px;
+  color: var(--white);
+  background: var(--ink);
+}
+
+.instrument-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instrument-resource-grid a {
+  display: grid;
+  min-height: 105px;
+  align-content: center;
+  gap: 5px;
+  padding: 20px;
+  border: 1px solid rgb(255 255 255 / 18%);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.instrument-resource-grid a:hover,
+.instrument-resource-grid a:focus-visible {
+  background: var(--red);
+}
+
+.instrument-resource-grid strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+.instrument-resource-grid span {
+  color: #bdbdc3;
+  font-size: 0.68rem;
 }
 
 .video-grid {
@@ -1819,6 +1930,11 @@ svg {
     --shell: min(100% - 32px, 720px);
   }
 
+  .site-header {
+    background: var(--paper);
+    backdrop-filter: none;
+  }
+
   .menu-button {
     display: flex;
     align-items: center;
@@ -1875,15 +1991,18 @@ svg {
 
   .site-nav {
     position: fixed;
-    top: 114px;
+    top: var(--mobile-nav-top, 104px);
     right: 0;
     bottom: 0;
     left: 0;
     display: none;
+    width: 100%;
     align-content: start;
+    overflow-y: auto;
     padding: 38px 30px;
     color: var(--white);
     background: var(--ink);
+    box-shadow: 0 20px 40px rgb(13 13 16 / 25%);
   }
 
   .site-nav.open {
@@ -2029,6 +2148,15 @@ svg {
 
   .instrument-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .instrument-hero-grid {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 30px;
+  }
+
+  .instrument-resource-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .cms-demo-grid {
@@ -2268,6 +2396,27 @@ svg {
 
   .instrument-grid figure {
     height: 125px;
+  }
+
+  .instrument-hero {
+    padding-block: 38px;
+  }
+
+  .instrument-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .instrument-hero h1 {
+    font-size: clamp(3.4rem, 17vw, 5rem);
+  }
+
+  .instrument-hero img {
+    height: 165px;
+  }
+
+  .instrument-resource-grid {
+    grid-template-columns: 1fr;
   }
 
   .future-hero-image {

@@ -269,6 +269,10 @@ content:
             collapsed: true
             summary: "{name}"
         fields:
+          - name: slug
+            label: Page ID
+            type: string
+            readonly: true
           - name: name
             label: Instrument
             type: string
@@ -277,6 +281,41 @@ content:
             label: Photo
             type: image
             required: true
+          - name: description
+            label: Instrument description
+            type: text
+          - name: videos
+            label: Videos
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                label: Video title
+                type: string
+                required: true
+              - name: url
+                label: YouTube embed URL
+                type: string
+                required: true
+          - name: resources
+            label: Supply sheets, FAQs, and stores
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: label
+                label: Link label
+                type: string
+                required: true
+              - name: url
+                label: Link
+                type: string
+                required: true
       - name: videos
         label: Videos
         type: object

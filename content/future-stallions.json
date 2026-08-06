@@ -3,48 +3,173 @@
   "hero_image_alt": "Future Stallions performing in the Euless Junior High gym",
   "instruments": [
     {
+      "slug": "flute",
       "name": "Flute",
-      "image": "/ejh-band-site/assets/instrument-flute.jpg"
+      "image": "/ejh-band-site/assets/instrument-flute.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the flute", "url": "https://www.youtube-nocookie.com/embed/_2GuZqt_AMY"},
+        {"title": "Professional flute player", "url": "https://www.youtube-nocookie.com/embed/MB8yPVmpiVA"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1hD1h3If-M0vLyvOLErXTGBM5YxOYN6eN/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/rentals/euless--tx/euless-junior-high-school-18138?radius=10&schoolname=euless&studentgrade=7&zipcode=76039#!/"},
+        {"label": "Sweetwater Music", "url": "https://www.sweetwater.com/instrument-rentals/rent"}
+      ]
     },
     {
+      "slug": "oboe",
       "name": "Oboe",
-      "image": "/ejh-band-site/assets/instrument-oboe.jpg"
+      "image": "/ejh-band-site/assets/instrument-oboe.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the oboe", "url": "https://www.youtube-nocookie.com/embed/8mNv_YUibzM"},
+        {"title": "Professional oboe player", "url": "https://www.youtube-nocookie.com/embed/FtE3hoR_Nvo"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1zSQiGWACsbj3rJoeVM6rloFJP_Nqg9a8/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     },
     {
+      "slug": "bassoon",
       "name": "Bassoon",
-      "image": "/ejh-band-site/assets/instrument-bassoon.jpg"
+      "image": "/ejh-band-site/assets/instrument-bassoon.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the bassoon", "url": "https://www.youtube-nocookie.com/embed/-kmy-hm3ai4"},
+        {"title": "Professional bassoon player", "url": "https://www.youtube-nocookie.com/embed/0L8nLe21fJk"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1WI2Xk6RPRY1wMhWRXyXFH1C2LQ7RLGRX/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     },
     {
+      "slug": "clarinet",
       "name": "Clarinet",
-      "image": "/ejh-band-site/assets/instrument-clarinet.jpg"
+      "image": "/ejh-band-site/assets/instrument-clarinet.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the clarinet", "url": "https://www.youtube-nocookie.com/embed/-_GtkhhXA0s"},
+        {"title": "Professional clarinet player", "url": "https://www.youtube-nocookie.com/embed/N3_pNnfelRg"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1nLACiisFz94TbhcmEwNBEpFUz5kT_OwG/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/rentals/euless--tx/euless-junior-high-school-18138?radius=10&schoolname=euless&studentgrade=7&zipcode=76039#!/"},
+        {"label": "Sweetwater Music", "url": "https://www.sweetwater.com/instrument-rentals/rent"}
+      ]
     },
     {
+      "slug": "saxophone",
       "name": "Saxophone",
-      "image": "/ejh-band-site/assets/instrument-saxophone.jpg"
+      "image": "/ejh-band-site/assets/instrument-saxophone.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the saxophone", "url": "https://www.youtube-nocookie.com/embed/6cNxQMSgwR8"},
+        {"title": "Professional saxophone player", "url": "https://www.youtube-nocookie.com/embed/zv8UOcB3RoA"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1Uf6xb4bYZfBv8r3hUidrNE6LQTtrvt-N/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/rentals/euless--tx/euless-junior-high-school-18138?radius=10&schoolname=euless&studentgrade=7&zipcode=76039#!/"},
+        {"label": "Sweetwater Music", "url": "https://www.sweetwater.com/instrument-rentals/rent"}
+      ]
     },
     {
+      "slug": "trumpet",
       "name": "Trumpet",
-      "image": "/ejh-band-site/assets/instrument-trumpet.jpg"
+      "image": "/ejh-band-site/assets/instrument-trumpet.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the trumpet", "url": "https://www.youtube-nocookie.com/embed/B1eyZAedhY4"},
+        {"title": "Professional trumpet player", "url": "https://www.youtube-nocookie.com/embed/GN09R2ryJ7o"}
+      ],
+      "resources": [
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/rentals/euless--tx/euless-junior-high-school-18138?radius=10&schoolname=euless&studentgrade=7&zipcode=76039#!/"},
+        {"label": "Sweetwater Music", "url": "https://www.sweetwater.com/instrument-rentals/rent"}
+      ]
     },
     {
+      "slug": "french-horn",
       "name": "French Horn",
-      "image": "/ejh-band-site/assets/instrument-horn.png"
+      "image": "/ejh-band-site/assets/instrument-horn.png",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the French horn", "url": "https://www.youtube-nocookie.com/embed/cK0UFgnrIqY"},
+        {"title": "Professional French horn player", "url": "https://www.youtube-nocookie.com/embed/xZO5KTJTwhE"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1ztB-XADEgygAHgZp35xdCnRsZbgVz--u/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     },
     {
+      "slug": "trombone",
       "name": "Trombone",
-      "image": "/ejh-band-site/assets/instrument-trombone.jpg"
+      "image": "/ejh-band-site/assets/instrument-trombone.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the trombone", "url": "https://www.youtube-nocookie.com/embed/mHw8P8NnUvI"},
+        {"title": "Professional trombone player", "url": "https://www.youtube-nocookie.com/embed/vTDEVUlCClk"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1U4teP0tZuEB_fFYXFbevAI0bNp-7ZKbB/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/rentals/euless--tx/euless-junior-high-school-18138?radius=10&schoolname=euless&studentgrade=7&zipcode=76039#!/"}
+      ]
     },
     {
+      "slug": "euphonium",
       "name": "Euphonium",
-      "image": "/ejh-band-site/assets/instrument-euphonium.jpg"
+      "image": "/ejh-band-site/assets/instrument-euphonium.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the euphonium", "url": "https://www.youtube-nocookie.com/embed/5APf07w4J2c"},
+        {"title": "Professional euphonium player", "url": "https://www.youtube-nocookie.com/embed/9kLppinCihU"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/11u13-HRGLYQz_OEhETI5osftxMUZhSiC/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     },
     {
+      "slug": "tuba",
       "name": "Tuba",
-      "image": "/ejh-band-site/assets/instrument-tuba.jpg"
+      "image": "/ejh-band-site/assets/instrument-tuba.jpg",
+      "description": "",
+      "videos": [
+        {"title": "Learn about the tuba", "url": "https://www.youtube-nocookie.com/embed/yTnhDFxEfwQ"},
+        {"title": "Professional tuba player", "url": "https://www.youtube-nocookie.com/embed/xZO5KTJTwhE"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1MAUCl-MyVSlNCkgSURvMkp8cbRzO6AZc/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     },
     {
+      "slug": "percussion",
       "name": "Percussion",
-      "image": "/ejh-band-site/assets/instrument-percussion.jpg"
+      "image": "/ejh-band-site/assets/instrument-percussion.jpg",
+      "description": "Drums: there are many types of drums in the percussion section; students will learn the correct technique on the Practice Pad.\n\nKeyboards: there are many types of keyboard instruments in the percussion section; students will learn the correct technique on many of these instruments during their daily percussion class.",
+      "videos": [
+        {"title": "Keyboard instruments", "url": "https://www.youtube-nocookie.com/embed/hJ11tLB1MN8"},
+        {"title": "Drum instruments", "url": "https://www.youtube-nocookie.com/embed/Sd2HydRhcPU"}
+      ],
+      "resources": [
+        {"label": "Supply Sheet", "url": "https://drive.google.com/file/d/1jLiQxpQDtqtHXLd9JQeuswvFU0zJoR7C/view?usp=sharing"},
+        {"label": "FAQs", "url": "https://drive.google.com/file/d/1BkJ2kqVJO6kPXOU5o0ZPHCjyPy3pJ0ZJ/view?usp=sharing"},
+        {"label": "Steve Weiss Music", "url": "https://www.steveweissmusic.com/category/euless"},
+        {"label": "Texas Marimbas", "url": "https://texasmarimbas.com"},
+        {"label": "Music & Arts", "url": "https://www.musicarts.com/school-supplies#!/"}
+      ]
     }
   ],
   "videos": [

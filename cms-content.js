@@ -279,14 +279,17 @@ function hydrateFutureStallions(content) {
   if (instruments) {
     instruments.replaceChildren();
     content.instruments.forEach((instrument) => {
+      const link = document.createElement("a");
       const figure = document.createElement("figure");
       const image = document.createElement("img");
       const caption = document.createElement("figcaption");
+      link.href = `instrument.html?instrument=${encodeURIComponent(instrument.slug)}`;
       image.src = resolveMediaPath(instrument.image);
       image.alt = "";
       caption.textContent = instrument.name;
       figure.append(image, caption);
-      instruments.append(figure);
+      link.append(figure);
+      instruments.append(link);
     });
   }
 
@@ -304,6 +307,67 @@ function hydrateFutureStallions(content) {
       stores[index].href = store.url;
       stores[index].querySelector("strong").textContent = store.name;
     }
+  });
+}
+
+function hydrateInstrumentPage(content) {
+  const slug = new URLSearchParams(window.location.search).get("instrument");
+  const instrument = content.instruments.find((item) => item.slug === slug);
+
+  if (!instrument) {
+    document.querySelectorAll("[data-instrument-name]").forEach((element) => {
+      element.textContent = "Instrument not found";
+    });
+    const description = document.querySelector("[data-instrument-description]");
+    description.hidden = false;
+    description.textContent =
+      "Return to Future Stallions and choose an instrument from the list.";
+    return;
+  }
+
+  document.title = `${instrument.name} | Euless JH Stallion Band`;
+  document.querySelectorAll("[data-instrument-name]").forEach((element) => {
+    element.textContent = instrument.name;
+  });
+
+  const image = document.querySelector("[data-instrument-image]");
+  image.src = resolveMediaPath(instrument.image);
+  image.alt = instrument.name;
+
+  const description = document.querySelector("[data-instrument-description]");
+  if (instrument.description) {
+    description.hidden = false;
+    paragraphsFromText(instrument.description).forEach((text) => {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      description.append(paragraph);
+    });
+  }
+
+  const videos = document.querySelector("[data-instrument-videos]");
+  instrument.videos.forEach((video) => {
+    const frame = document.createElement("iframe");
+    frame.src = video.url;
+    frame.title = video.title;
+    frame.loading = "lazy";
+    frame.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    frame.allowFullscreen = true;
+    videos.append(frame);
+  });
+
+  const resources = document.querySelector("[data-instrument-resources]");
+  instrument.resources.forEach((resource) => {
+    const link = document.createElement("a");
+    const label = document.createElement("strong");
+    const action = document.createElement("span");
+    link.href = resource.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    label.textContent = resource.label;
+    action.textContent = "Open ↗";
+    link.append(label, action);
+    resources.append(link);
   });
 }
 
@@ -339,6 +403,12 @@ async function hydrateCmsContent() {
   } else if (page === "future-stallions.html") {
     loadContent("future-stallions")
       .then(hydrateFutureStallions)
+      .catch((error) => {
+        reportContentError("future-stallions", error);
+      });
+  } else if (page === "instrument.html") {
+    loadContent("future-stallions")
+      .then(hydrateInstrumentPage)
       .catch((error) => {
         reportContentError("future-stallions", error);
       });
