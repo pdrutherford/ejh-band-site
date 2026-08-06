@@ -1,0 +1,70 @@
+{
+  "hero_image": "/ejh-band-site/assets/future-stallions.jpg",
+  "hero_image_alt": "Future Stallions performing in the Euless Junior High gym",
+  "instruments": [
+    {
+      "name": "Flute",
+      "image": "/ejh-band-site/assets/instrument-flute.jpg"
+    },
+    {
+      "name": "Oboe",
+      "image": "/ejh-band-site/assets/instrument-oboe.jpg"
+    },
+    {
+      "name": "Bassoon",
+      "image": "/ejh-band-site/assets/instrument-bassoon.jpg"
+    },
+    {
+      "name": "Clarinet",
+      "image": "/ejh-band-site/assets/instrument-clarinet.jpg"
+    },
+    {
+      "name": "Saxophone",
+      "image": "/ejh-band-site/assets/instrument-saxophone.jpg"
+    },
+    {
+      "name": "Trumpet",
+      "image": "/ejh-band-site/assets/instrument-trumpet.jpg"
+    },
+    {
+      "name": "French Horn",
+      "image": "/ejh-band-site/assets/instrument-horn.png"
+    },
+    {
+      "name": "Trombone",
+      "image": "/ejh-band-site/assets/instrument-trombone.jpg"
+    },
+    {
+      "name": "Euphonium",
+      "image": "/ejh-band-site/assets/instrument-euphonium.jpg"
+    },
+    {
+      "name": "Tuba",
+      "image": "/ejh-band-site/assets/instrument-tuba.jpg"
+    },
+    {
+      "name": "Percussion",
+      "image": "/ejh-band-site/assets/instrument-percussion.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Music as a language",
+      "url": "https://www.youtube-nocookie.com/embed/3yRMbH36HRE"
+    },
+    {
+      "title": "How playing an instrument benefits your brain",
+      "url": "https://www.youtube-nocookie.com/embed/R0JKCYZ8hng"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Music & Arts",
+      "url": "https://www.musicarts.com/rentals"
+    },
+    {
+      "name": "Sweetwater",
+      "url": "https://www.sweetwater.com/instrument-rentals/rent"
+    }
+  ]
+}

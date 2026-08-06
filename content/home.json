@@ -1,0 +1,17 @@
+{
+  "logo_image": "/ejh-band-site/assets/stallion-mark.png",
+  "gallery": [
+    {
+      "image": "/ejh-band-site/assets/home-rehearsal.jpg",
+      "alt": "Euless Junior High band students rehearsing outdoors"
+    },
+    {
+      "image": "/ejh-band-site/assets/home-group.jpg",
+      "alt": "Euless Junior High band students gathered for a group photo"
+    },
+    {
+      "image": "/ejh-band-site/assets/home-bus.jpg",
+      "alt": "Euless Junior High band students traveling together"
+    }
+  ]
+}

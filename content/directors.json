@@ -1,0 +1,20 @@
+{
+  "directors": [
+    {
+      "role": "Head Director",
+      "name": "Christen Stout",
+      "email": "christenstout@hebisd.edu",
+      "image": "/ejh-band-site/assets/christen-stout.png",
+      "image_alt": "Christen Stout",
+      "bio": "Ms. Stout is beginning her 9th year as Head Director of the Euless Junior High Stallion Band. Her teaching responsibilities include the Symphonic Band, Beginning Brass classes, and assisting with the Concert Band. Prior to joining Euless JH, Ms. Stout was a Head Junior High Director in Arlington ISD, and has served as an assistant director in Lubbock-Cooper and Henderson ISD's.\n\nMs. Stout's primary instrument is Horn; and was a two-year member of the All State Band and a four-year Solo State Qualifier. She earned her Bachelor's Degree from Texas A&M-Commerce, and her Master's Degree from Texas Tech University.\n\nWhen Ms. Stout is not teaching, she's watching re-runs of \"The Office\" and \"Parks and Rec\"; hanging out with her dogs; or FaceTiming with her nieces and nephews."
+    },
+    {
+      "role": "Assistant Director",
+      "name": "Anna Rutherford",
+      "email": "annarutherford@hebisd.edu",
+      "image": "/ejh-band-site/assets/anna-rutherford.jpg",
+      "image_alt": "Anna Rutherford holding a saxophone",
+      "bio": "Anna Rutherford is the Assistant Director at Euless Junior High. Prior to her appointment, Ms. Rutherford was the Assistant Director at Clark High School in Plano ISD, and student taught at L.D. Bell High School and Central Junior High School in Hurst-Euless-Bedford ISD.\n\nMs. Rutherford graduated Summa Cum Laude from Texas Christian University where she received a Bachelor’s Degree in Music Education (Go Frogs!). During her time at TCU, Ms. Rutherford performed with the TCU Wind Symphony, Jazz Ensemble 1, TCU Saxophone Quartet, and Horned Frog Marching Band. Ms. Rutherford also worked as a marching technician at Aledo High School and as a saxophone private teacher at Kerr Middle School in Burleson ISD.\n\nMs. Rutherford’s professional affiliations include Texas Music Educators Association and Kappa Kappa Psi. Outside of school, Ms. Rutherford loves to cook, travel, and read (especially the works of Brandon Sanderson). She’s a jazz lover and performer and gigs professionally in big bands and jazz combos around the DFW area."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+media:
+  - name: images
+    label: Images
+    input: assets
+    output: /ejh-band-site/assets
+    extensions: [png, jpg, jpeg, webp, gif]
+    categories: [image]
+    rename: safe
+  - name: documents
+    label: PDF documents
+    input: documents
+    output: /ejh-band-site/documents
+    extensions: [pdf]
+    categories: [document]
+    rename: safe
+
+settings:
+  hide: true
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      update: "Update {name} via Pages CMS"
+
+content:
+  - name: announcement
+    label: Announcements
+    type: file
+    path: content/announcement.json
+    format: json
+    fields:
+      - name: enabled
+        label: Show announcement
+        type: boolean
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: message
+        label: Message
+        type: text
+        required: true
+
+  - name: home
+    label: Home Page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: logo_image
+        label: Stallion Band logo
+        type: image
+        required: true
+      - name: gallery
+        label: Home page photos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{alt}"
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: alt
+            label: Photo description
+            type: string
+            required: true
+
+  - name: calendar
+    label: Calendar
+    type: file
+    path: content/calendar.json
+    format: json
+    fields:
+      - name: embed_url
+        label: Google Calendar embed URL
+        type: string
+        required: true
+      - name: page_image
+        label: Band photo
+        type: image
+        required: true
+      - name: page_image_alt
+        label: Band photo description
+        type: string
+        required: true
+      - name: schedule_files
+        label: Schedule PDFs
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Button label
+            type: string
+            required: true
+          - name: url
+            label: Existing PDF link
+            type: string
+            required: true
+          - name: uploaded_file
+            label: Or upload a replacement PDF
+            type: file
+            options:
+              media: documents
+              extensions: [pdf]
+      - name: sectionals
+        label: Weekly sectionals
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{day}: {instruments}"
+        fields:
+          - name: day
+            label: Day
+            type: string
+            required: true
+          - name: short_day
+            label: Short day
+            type: string
+            required: true
+          - name: instruments
+            label: Instruments
+            type: string
+            required: true
+          - name: time
+            label: Time
+            type: string
+            required: true
+
+  - name: classes
+    label: Band Classes
+    type: file
+    path: content/classes.json
+    format: json
+    fields:
+      - name: bands
+        label: Bands
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: Page ID
+            type: string
+            readonly: true
+          - name: number
+            label: Display number
+            type: string
+            readonly: true
+          - name: grade_label
+            label: Grade label
+            type: string
+            required: true
+          - name: title
+            label: Band name
+            type: string
+            required: true
+          - name: director_line
+            label: Director line
+            type: string
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: image_alt
+            label: Photo description
+            type: string
+            required: true
+          - name: body
+            label: Original class description
+            description: Separate paragraphs with a blank line.
+            type: text
+            required: true
+          - name: competitions
+            label: Required competitions
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{month}: {name}"
+            fields:
+              - name: month
+                label: Month
+                type: string
+                required: true
+              - name: name
+                label: Competition
+                type: string
+                required: true
+          - name: quote
+            label: Highlighted quote
+            type: text
+          - name: parent_intro
+            label: Parent guidance
+            type: text
+          - name: parent_tips
+            label: Parent tips
+            type: string
+            list: true
+
+  - name: directors
+    label: Directors
+    type: file
+    path: content/directors.json
+    format: json
+    fields:
+      - name: directors
+        label: Director profiles
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: role
+            label: Role
+            type: string
+            required: true
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: email
+            label: Email
+            type: string
+            required: true
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: image_alt
+            label: Photo description
+            type: string
+            required: true
+          - name: bio
+            label: Biography
+            description: Separate paragraphs with a blank line.
+            type: text
+            required: true
+
+  - name: future_stallions
+    label: Future Stallions
+    type: file
+    path: content/future-stallions.json
+    format: json
+    fields:
+      - name: hero_image
+        label: Header photo
+        type: image
+        required: true
+      - name: hero_image_alt
+        label: Header photo description
+        type: string
+        required: true
+      - name: instruments
+        label: Instruments
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Instrument
+            type: string
+            required: true
+          - name: image
+            label: Photo
+            type: image
+            required: true
+      - name: videos
+        label: Videos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Video title
+            type: string
+            required: true
+          - name: url
+            label: YouTube embed URL
+            type: string
+            required: true
+      - name: stores
+        label: Music stores
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Store name
+            type: string
+            required: true
+          - name: url
+            label: Rental link
+            type: string
+            required: true
+
+  - name: contact
+    label: Contact Details
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: head_director_email
+        label: Head director email
+        type: string
+        required: true
+      - name: assistant_director_email
+        label: Assistant director email
+        type: string
+        required: true
+      - name: phone_display
+        label: Phone number
+        type: string
+        required: true
+      - name: phone_extension
+        label: Extension
+        type: string
+        required: true
+      - name: phone_href
+        label: Telephone link
+        description: Digits only, including country code.
+        type: string
+        required: true

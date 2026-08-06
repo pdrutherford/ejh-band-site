@@ -1,0 +1,43 @@
+{
+  "embed_url": "https://calendar.google.com/calendar/embed?src=hebisd.edu_ltavtb4kvg62kkl76rdeler6bo%40group.calendar.google.com&ctz=America%2FChicago",
+  "page_image": "/ejh-band-site/assets/calendar-band.jpg",
+  "page_image_alt": "Euless Junior High band students",
+  "schedule_files": [
+    {
+      "label": "2025–26 performing band PDF ↗",
+      "url": "https://drive.google.com/file/d/1Xo11sokJ6PmMD1f7zTmtxbQecMP29epo/view?usp=sharing",
+      "uploaded_file": ""
+    },
+    {
+      "label": "2025–26 beginner PDF ↗",
+      "url": "https://drive.google.com/file/d/1SN-QpDFJ19oOHa4BTZlOVN7HuxnEwz5I/view?usp=sharing",
+      "uploaded_file": ""
+    }
+  ],
+  "sectionals": [
+    {
+      "day": "Tuesday",
+      "short_day": "Tue",
+      "instruments": "Flutes & oboes",
+      "time": "7:00–7:45 AM"
+    },
+    {
+      "day": "Wednesday",
+      "short_day": "Wed",
+      "instruments": "Clarinets & alto sax",
+      "time": "7:00–7:45 AM"
+    },
+    {
+      "day": "Thursday",
+      "short_day": "Thu",
+      "instruments": "Trumpets, horns & percussion",
+      "time": "7:00–7:45 AM"
+    },
+    {
+      "day": "Friday",
+      "short_day": "Fri",
+      "instruments": "Low brass & low woodwinds",
+      "time": "7:00–7:45 AM"
+    }
+  ]
+}
